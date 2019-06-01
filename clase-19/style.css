@@ -1,0 +1,22 @@
+.main {
+  background-color: lightpink;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: lightgrey;
+  height: 150px;
+  width: 250px;
+  border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-wrap: nowrap;
+  }
+  .card {
+    background-color: palevioletred;
+    border: 2px solid white;
+  }
+}

@@ -1,0 +1,36 @@
+html, body, .contenedor{
+    height: 100vh;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario {
+    flex: 1;
+}
+.caja{
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    background-color: lightskyblue
+}
+button{
+    background-color:lightskyblue
+}
+button.Enviar{
+    background-color:lightgreen;
+    border: none;
+}

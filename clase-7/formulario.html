@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario AFIP 420</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Formulario AFIP 420</h1> 
+        <p>Este formulario te va a robar la vida</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#seccion-1">Datos Personales</a></li>
+            <li><a href="#seccion-2">Datos Familiares y Mascotas</a></li>
+            <li><a href="#seccion-3">Datos Laborales y Conocimientos</a></li>
+        </ul>
+    </nav>
+    <!--Fin encabezado-->
+    
+<!--Formulario Número 1-->
+    <!--Contenido-->
+    <form>
+        <fieldset>
+            <legend>
+               <titulo-de-formulario id="seccion-1"> Datos Personales</titulo-de-formulario>
+            </legend>
+            <div id="transparente">          
+                    <label for="Nombres-y-Apellidos">Nombres y Apellidos</label>
+                    <input id="Nombres-y-Apellidos" type="text" placeholder="Nombres y Apellidos">
+            <br/>     
+            <br/>
+              
+                    <label for="fecha-de-nacimiento">Fecha de Nacimiento</label>
+                    <input id="fecha-de-nacimiento" type="date">
+            <br/>    
+            <br/>
+               
+                    <label for="edad">Edad</label>
+                    <input id="edad" type="number" placeholder="Edad">
+            <br/>    
+            <br/>
+                <!--Tipo de Sangre-->
+                
+                <label for="Tipos-de-Sangre">Tipo de Sangre</label>
+                <span id="Tipos-de-Sangre">
+                <label for="tipo-de-sangre-0">0</label>
+                <input id="tipo-de-sangre-0" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-A">A</label>
+                <input id="tipo-de-sangre-A" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-B">B</label>
+                <input id="tipo-de-sangre-B" name="tipo-de-sangre" type="radio">
+                <label for="tipo-de-sangre-AB">AB</label>
+                <input id="tipo-de-sangre-AB" name="tipo-de-sangre" type="radio">
+                </span>
+            <br/>    
+            <br/> 
+                <!--Fin tipo de Sangre-->
+
+                <!--RH de Sangre-->
+                
+                <label for="RH-de-sangre">RH de Sangre</label>
+                <select id="RH-de-sangre" name="RH-de-sangre">
+                    <option value="">Seleccione su RH</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="0">0</option>
+                </select>
+               
+                <!--Fin RH de Sangre-->
+            <br/>
+            <br/>   
+                <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email">
+                      
+            <br/> 
+            <br/>    
+                <label for="telefono">Número de Teléfono</label>
+                    <input id="telefono" type="tel" placeholder="Teléfono">
+             <br/>     
+            <br/>     
+                 
+                <label for="documento-de-identidad">Documento de Identidad</label>
+                    <input id="documento-de-identidad" type="number" placeholder="Documento de Identidad">
+               
+            <br/>     
+            <br/>  
+                <label for="tarjeta-de-credito">Tarjeta de Crédito</label>
+                    <input id="tarjeta-de-credito" type="number" placeholder="Tarjeta de Crédito">
+            </div>  
+        </fieldset>
+    </form> 
+    <!--Fin del contenido-->
+<!--Fin del Formulario Número 1-->
+
+<!--Formulario Número 2-->
+    <!-- Contenido -->
+        <form>
+            <fieldset id="formulario-2">
+                <legend>
+                    <titulo-del-segundo-formulario id="seccion-2">Datos Familiares y Mascotas</titulo-del-segundo-formulario>
+                </legend>
+
+                <!--Estado Civil-->
+                <div>
+                    <label for="Estado-civil">Estado Civil:</label>
+                    <span id="Estado-civil">
+                    <label for="soltero">Soltero</label>
+                    <input id="soltero" name="estadocivil" type="radio">
+                    <label for="casado">Casado</label>
+                    <input id=casado name="estadocivil" type="radio">
+                    <label for="viudo">Viudo</label>
+                    <input id="viudo" name="estadocivil" type="radio">
+                    <label for="divorciado">Divorciado</label>
+                    <input id="divorciado" name="estadocivil" type="radio">
+                    </span>
+                </div>
+                <br/>
+                <!--Fin de Estado Civil-->
+
+                <!-- Hijos -->
+                <div>
+                    <label for="hijos">¿Tiene hijos? </label>
+                    <select id="hijos" name="Hijos">
+                        <option value="">Seleccionar</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!-- Fin de Hijos -->
+                <br/>
+                <div>
+                    <label for="cantidad-de-hijos">Cantidad de Hijos</label>
+                    <input id="cantidad-de-hijos" type="range" min="0" max="10">
+                </div>
+                <br/>
+                <div>
+                    <label for="personas-viviendo">¿Cuántas personas viven en tu casa?</label>
+                    <input id=personas-viviendo type="range" min="0" max="10">
+                </div>
+                <br/>
+                <div>
+                    <label for="aportes">¿Cuántas personas en tu hogar aportan económicamente a la vivienda?</label>
+                    <span id="aportes">
+                    <label for="Madre">Madre</label>
+                    <input id="Madre" type="checkbox">
+                    <label for="Padre">Padre</label>
+                    <input id="Padre" type="checkbox">
+                    <label for="Hermanxs">Hermanxs</label>
+                    <input id="Hermanxs" type="checkbox">
+                    <label for="Conyugue">Conyugue</label>
+                    <input id="Conyugue" type="checkbox">
+                    <label for="Yo">Yo</label>
+                    <input id="Yo" type="checkbox">
+                    </span>
+                </div>
+                <br/>
+                <!-- Mascotas -->
+                <div>
+                    <label for="Mascotas">¿Tienes mascotas?</label>
+                    <span id="Mascotas">
+                        <label for="Si-Mascota">Si</label>
+                        <input type="radio" id="Si-Mascota" name="Mascotas-Si-No">
+                        <label for="No-Mascota">No</label>
+                        <input type="radio"  id="No-Mascota" name="Mascotas-Si-No">
+                    </span>
+                </div>
+                <!-- Fin de Mascotas -->
+                <br/>
+                <div>
+                    <label for="Cuantas-Mascotas">¿Cuántas?</label>
+                    <input type="range" id="Cuantas-Mascotas" min="0" max="10">
+                </div>
+                <br/>
+                <div>
+                    <label for="Nombre-Mascota">Pon aquí sus nombres</label>
+                    <input type="text" id="Nombre-Mascota" placeholder="Nombre de tus Mascotas">
+                </div>
+            </fieldset>
+        </form>
+<!--Fin contenido-->
+<!--Fin Formulario Número 2-->
+
+<!-- Inicio Formulario Número 3 -->
+<!-- Contenido -->
+        <form>
+            <fieldset>
+                <legend>
+                    <titulo-del-tercer-formulario id="seccion-3">Datos Profesionales y Conocimientos</titulo-del-tercer-formulario>
+                </legend>
+            <!-- Nivel de estudios -->
+                <div>
+                    <label for="Nivel-de-estudios">Nivel de Estudios</label>
+                    <select id="Nivel-de-estudios">
+                        <option value="">Nivel de estudios</option>
+                        <option value="Primaria"> Primaria</option>
+                        <option value="Secundaria">Secundaria</option>
+                        <option value="Terciario">Terciario</option>
+                        <option value="Universitario">Universitario</option>
+                        <option value="Posgrado">Posgrado</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorado">Doctorado</option>
+                    </select>
+                </div>
+            <!-- Fin de Nivel de Estudios -->
+            <br/>
+            <div>
+                <label for="institucion">Nombre de la Institución</label>
+                <input type="text" placeholder="Nombre de la Institución" id="institucion">
+            </div>
+            <br/>
+
+            <!-- Estado de Estudios  -->
+            <div>
+                <label for="Estado">Estado: </label>
+                <span id="Estado">
+                <label for="Culminado">Culminado</label>
+                <input id="Culminado" name="Estado-estudio" type="radio">
+                <label for="Cursando">Cursando</label>
+                <input id="Cursando" name="Estado-estudio" type="radio">
+                <label for="Abandonado">Abandonado</label>
+                <input id="Abandonado" name="Estado-estudio" type="radio">
+                </span>
+            </div>
+            <!-- Fin de Estado de Estudios -->
+            <br/>
+            <!-- Trabajo actual -->
+            <div>
+                <label for="trabajo-actual">¿Trabaja actualmente?</label>
+                <label for="Si">Si</label>
+                <input id="Si" type="radio" name="trabajo">
+                <label for="No">No</label>
+                <input id="No" type="radio" name="trabajo">
+            </div>
+            <!-- Fin Trabajo Actual -->
+            <br/>
+            <div>
+                <label for="empresa">Nombre de la Empresa</label>
+                <input type="text" placeholder="Nombre de la Empresa" id="empresa">
+            </div>
+            <br/>
+            <div>
+                <label for="fecha-inicio">Fecha de Inicio</label>
+                <input type="date"  id="fecha-inicio">
+            </div>
+            <br/>
+            <div>
+                <label for="Idiomas">Idiomas</label>
+                <input type="text"  id="Idiomas" placeholder="Idiomas">
+            </div>
+            <br/>
+            <!-- Nivel de Idioma -->
+            <div>
+                <label for="nivel-idioma">Nivel de Idioma</label>
+                <select id="nivel-idioma">
+                    <option value="">Nivel</option>
+                    <option value="Muy-basico">Muy básico</option>
+                    <option value="Basico">Básico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                    <option value="Nativo">Nativo</option>
+                </select>
+            </div>
+            <!-- Fin de Nivel de Idioma -->
+            <br/>
+            <div>
+                <label for="CV">Adjunte su CV</label>
+                <input type="file" name="" id="CV">
+            </div>
+            <br/>
+            <div>
+                <label for="Linkedin">Pon aquí tu perfil de Linkedin</label>
+                <input type="url" id="Linkedin" placeholder="Link de tu perfil">
+            </div>
+        </fieldset>
+    </form>
+         
+    <!-- Fin del Contenido -->
+<!-- Fin del Formulario Número 3 -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+header {
+  background-color: rgb(255, 206, 214);
+  padding-right: 25px;
+  margin-right: 10px;
+}
+
+.logo {
+  height: 150px;
+  width: 125px;
+}
+.img-gatito {
+  height: 200px;
+  width: 200px;
+}
+#cuadrado {
+  float: right;
+}
+
+#foto-gato {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(255, 206, 214);
+}
