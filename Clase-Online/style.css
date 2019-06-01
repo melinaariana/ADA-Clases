@@ -1,0 +1,17 @@
+#id1,
+#id2,
+#id3 {
+  color: skyblue;
+}
+ul li.important {
+  color: hotpink;
+}
+ul li {
+  color: lime;
+}
+li.important {
+  color: indigo;
+}
+li {
+  color: goldenrod;
+}
